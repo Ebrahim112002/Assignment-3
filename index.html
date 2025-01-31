@@ -4,22 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- daisy ui  -->
-     
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header>
 
+    <!-- Google Font (Sora) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/af0d768821.js" crossorigin="anonymous"></script>
+
+    <!-- Daisy UI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "rgb(23,152,0)",
+            },
+          },
+        },
+      };
+    </script>
+
+</head>
+<body class="font-sora">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-b from-white to-[rgb(239,235,227)]">
+        <nav class="flex justify-between w-full max-w-7xl mx-auto items-center my-8 px-4">
+            <!-- Logo -->
+            <div class="">
+                <!-- Logo for large screens -->
+                <img src="c2-assets/logo-header.png" alt=""
+                    class="h-[60px] w-[160px] hidden lg:block">
+                
+                <!-- Logo for small screens -->
+                <img src="c2-assets/Group.svg" alt=""
+                    class="h-[60px]  block lg:hidden ml-0">
+            </div>
+            
+
+            <div class="hidden lg:flex">
+                <ul class="flex gap-10 text-gray-700">
+                    <li><a href="#" class="hover:text-clifford">Product</a></li>
+                    <li><a href="#" class="hover:text-clifford">Services</a></li>
+                    <li><a href="#" class="hover:text-clifford">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-7">
+                <a href="#"><i class="fa-solid fa-magnifying-glass text-gray-700"></i></a>
+                <a href="#"><img src="c2-assets/shopping-cart.png" alt="Cart" class="size-[24px]"></a>
+                <button class="border border-clifford font-semibold px-8 py-2 rounded-md hover:bg-clifford hover:text-white transition">Login</button>
+                <button class="bg-clifford font-semibold text-white px-8 py-2 rounded-md hover:bg-[rgb(20,130,0)] transition">
+                    Register
+                </button>
+            </div>
+
+            <img src="c2-assets/heroicons-solid_bars-3.png" alt="" class="size-[74px] lg:hidden ">
+        </nav>
+        <div class="block md:hidden bg-[rgb(20,130,0)] h-[2px] w-full"></div>
+
+        <div class="my-20 flex flex-col justify-center items-center px-4">
+            <div class="text-center max-w-4xl">
+                <h1 class="text-4xl md:text-6xl/[1.2] text-black font-bold leading-tight ">
+                   Freshness <span class="text-clifford">You Can <br class="hidden md:inline">
+                    Count</span> On, Prices You’ll Love!
+                </h1>
+                <p class="mt-4 text-lg text-gray-700">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>
+                    staples, we’ve got you covered every day!
+                </p>
+                <img src="c2-assets/hero-vegetables.png" alt=""
+                    class="mt-8 w-full max-w-[1400px] h-auto">
+            </div>
+        </div>
+        
+       
     </header>
 
+    <!-- Main Content -->
     <main>
-
+        <!-- card sec -->
+         <section class="flex flex-wrap justify-between w-full max-w-7xl mx-auto items-center">
+           
+         </section>
     </main>
 
-    <footer>
-        
-    </footer>
+    <!-- Footer -->
+    <footer></footer>
+
 </body>
 </html>
